@@ -4,9 +4,10 @@
 #
 # ==========================
 import cv2
+import sys
 
-fn = sys.argv[0]
-pf = sys.argv[1]
+fn = sys.argv[1]
+pf = sys.argv[2]
 
 vidcap = cv2.VideoCapture(fn)
 success, image = vidcap.read()
